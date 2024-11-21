@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function KYCForm() {
   const [name, setName] = useState('')
@@ -11,10 +12,12 @@ function KYCForm() {
   const [pan, setPan] = useState('')
   const [gst, setGst] = useState('')
 
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log({ name, age, businessType, income, address, dependents, pan,gst })
+    alert("Personal Details Submitted successfully.")
+    navigate("/address")
   }
 
   return (

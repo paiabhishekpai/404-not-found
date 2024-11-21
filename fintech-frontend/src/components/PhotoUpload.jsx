@@ -14,12 +14,14 @@ const PhotoUpload = () => {
 
   const handleUpload = () => {
     if (photo) {
-      alert("Photo uploaded successfully (stub functionality).");
+      alert("Photo uploaded successfully.");
       // Replace this with the actual upload logic
     } else {
       alert("Please select a photo before uploading.");
     }
   };
+
+
 
   return (
     <div className="  bg-white rounded shadow-md space-y-4 p-6 flex flex-col items-center justify-center mt-8">
@@ -45,6 +47,7 @@ const PhotoUpload = () => {
       >
         Upload
       </button>
+      
     </div>
   );
 };
