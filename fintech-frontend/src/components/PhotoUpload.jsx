@@ -23,7 +23,7 @@ const PhotoUpload = () => {
 
   return (
     <div className="  bg-white rounded shadow-md space-y-4 p-6 flex flex-col items-center justify-center mt-8">
-      <h2 className="text-xl font-bold mb-4">Upload Photo</h2>
+      <h2 className="text-xl font-bold mb-4">Upload photo of your address</h2>
       <input
         type="file"
         accept="image/*"
@@ -43,7 +43,7 @@ const PhotoUpload = () => {
         onClick={handleUpload}
         className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
       >
-        Upload Photo
+        Upload
       </button>
     </div>
   );

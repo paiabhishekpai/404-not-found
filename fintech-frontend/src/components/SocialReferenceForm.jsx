@@ -22,12 +22,11 @@ const SocialReferenceForm = ({ onSubmit }) => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4 bg-white shadow-md rounded-lg">
-      <h2 className="text-xl font-semibold mb-4">Social References</h2>
+    <div className="w-[70vw] mx-auto p-4 bg-white shadow-md rounded-lg">
       <form onSubmit={handleSubmit} className="space-y-4">
         {references.map((reference, index) => (
           <div key={index} className="space-y-2">
-            <h3 className="font-medium">Reference {index + 1}</h3>
+            <h3 className="font-bold">Reference {index + 1}</h3>
             <div className="flex flex-col">
               <label className="font-medium">Name</label>
               <input

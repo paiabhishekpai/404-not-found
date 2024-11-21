@@ -6,7 +6,7 @@ const Header = () => {
     <header className="bg-blue-500 text-white py-4 px-8 flex justify-between items-center shadow-md">
       {/* Logo */}
       <div className="text-2xl font-bold">
-        <Link to="/">FinTech</Link>
+        <Link to="/">NanoAid</Link>
       </div>
       {/* Navigation */}
       <nav className="space-x-6">

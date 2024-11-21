@@ -8,10 +8,13 @@ function KYCForm() {
   const [address, setAddress] = useState('')
   const [dependents, setDependents] = useState('')
   const [aadhar, setAadhar] = useState('')
+  const [pan, setPan] = useState('')
+  const [gst, setGst] = useState('')
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log({ name, age, businessType, income, address, dependents })
+    console.log({ name, age, businessType, income, address, dependents, pan,gst })
   }
 
   return (
@@ -40,6 +43,14 @@ function KYCForm() {
         placeholder="Aadhar Number"
         value={aadhar}
         onChange={(e) => setAadhar(e.target.value)}
+        className="w-full p-2 border border-gray-300 rounded"
+        required
+      />
+       <input
+        type="number"
+        placeholder="PAN Number"
+        value={pan}
+        onChange={(e) => setPan(e.target.value)}
         className="w-full p-2 border border-gray-300 rounded"
         required
       />
@@ -75,6 +86,14 @@ function KYCForm() {
         placeholder="Business Address"
         value={address}
         onChange={(e) => setAddress(e.target.value)}
+        className="w-full p-2 border border-gray-300 rounded"
+        required
+      />
+      <input
+        type="text"
+        placeholder="GSTIN number"
+        value={gst}
+        onChange={(e) => setGst(e.target.value)}
         className="w-full p-2 border border-gray-300 rounded"
         required
       />

@@ -7,6 +7,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
+import RoutingPage from "./pages/Routingpage";
+import SocialRefPage from "./pages/SocialRefPage";
+import Statement from "./pages/Statement";
+import Addressproof from "./pages/Addressproof";
 
 const App = () => {
   return (
@@ -22,7 +26,12 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />;
             <Route path="/" element={<HomePage />} />
             <Route path="/loan" element={<LoanPage />} />
+            <Route path="/routing" element={<RoutingPage />} />
             <Route path="/kyc" element={<KYCPage />} />
+            <Route path="/address" element={<Addressproof />} />
+            <Route path="/socialref" element={<SocialRefPage />} />
+            <Route path="/statement" element={<Statement />} />
+
           </Routes>
         </main>
 
