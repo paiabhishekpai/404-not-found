@@ -1,6 +1,9 @@
 // src/components/SocialReferenceForm.jsx
 
 import React, { useState } from "react";
+import graph from "../assets/graph.jpg"
+import bar from "../assets/bar.jpg"
+
 
 const SocialReferenceForm = ({ onSubmit }) => {
   const [references, setReferences] = useState([
@@ -66,6 +69,25 @@ const SocialReferenceForm = ({ onSubmit }) => {
           Submit References
         </button>
       </form>
+
+      <div className="report mt-96">
+        <h1 className="font-bold text-3xl text-center  mb-8">Credit-Worthiness Report</h1>
+        <div>
+          <ul className="flex flex-col list-none text-center font-bold">
+            <li>Name:Ramesh</li>
+            <li>Age:40</li>
+            <li>Aadhar Number: 8282 2728 8162</li>
+            <li>Pan Number: OEHPI09LK</li>
+            <li>Annual Income: 200000</li>
+            </ul>
+            
+          </div>
+        <div className="graphs flex justify-center gap-10 mb-24">
+      
+        <img src={graph} className="w-[300px] " alt="not found" />
+        <img src={bar} className="w-[300px] " alt="not found" />
+        </div>
+      </div>
     </div>
   );
 };

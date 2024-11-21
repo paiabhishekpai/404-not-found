@@ -11,6 +11,7 @@ import RoutingPage from "./pages/Routingpage";
 import SocialRefPage from "./pages/SocialRefPage";
 import Statement from "./pages/Statement";
 import Addressproof from "./pages/Addressproof";
+import Report from "./pages/report";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/address" element={<Addressproof />} />
             <Route path="/socialref" element={<SocialRefPage />} />
             <Route path="/statement" element={<Statement />} />
+            <Route path="/report" element={<Report />} />
 
           </Routes>
         </main>
